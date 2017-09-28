@@ -22,9 +22,10 @@
             	color:red;
             }
 
-            .img {
+            img {
               max-width: 100%;
               height: auto;
+              width: auto;
             }
             </style>
 
