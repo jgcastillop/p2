@@ -23,12 +23,14 @@
             }
 
             img {
-              width: 100%;
+              max-width: 50%;
               height: auto;
             }
             </style>
 
-						<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel = "stylesheet">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 						<?php require "logic.php"; ?>
 
@@ -38,7 +40,7 @@
 			<div class="container">
 	<h1>xkcd Password Generator</h1>
 	<br>
-	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic" height="450" width="550">
+	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic" height="250" width="350">
 	<h3><p class='password'><b>Your password:</b><br> <?php echo $password ?></p></h3>
 		<div class='error'><i><?php echo $errorMessage ?></i></div>
 		<br>
@@ -46,7 +48,7 @@
 		<div class='form-group'>
 			<label>
 			Quantity of words to use (between 4 and 8):
-					<input maxlength=1 type="text" name="quantity_of_words" value='<?php echo $qtyWords ?>'>
+					<input id=numb maxlength=1 type="text" name="quantity_of_words" value='<?php echo $qtyWords ?>'>
 				</label>
 			</div>
 			<div class='form-group'>
@@ -66,7 +68,23 @@
 				</label>
 				<br>
 			</div>
-			<button type='submit' class='btn btn-default'>Generate new password</button>
+			<button type='submit' class='btn btn-default' onclick="myFunction()">Generate new password</button>
+      <script>
+      function myFunction() {
+        var x, text;
+
+        // Get the value of the input field with id="numb"
+        x = document.getElementById("numb").value;
+
+        // If x is Not a Number or less than one or greater than 10
+        if (isNaN(x) || x < 4 || x > 8) {
+        text = "Input not valid";
+        } else {
+        text = "Input OK";
+        }
+        document.getElementById("demo").innerHTML = text;
+        }
+        </script>
 
 		</form>
 </div>

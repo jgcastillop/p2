@@ -37,14 +37,14 @@ if(isset($_GET['quantity_of_words']) && !empty($_GET['quantity_of_words']))
 	if(!is_numeric($qtyWords))
 	{
 
-		$errorMessage = "Only an integer between 4 and 8 is allowed.";
+		$errorMessage = "Password reset. Only an integer between 4 and 8 is allowed.";
 		$qtyWords = 4;
 
 	}
 	elseif ($qtyWords > 8 || $qtyWords < 4)
 	{
 
-		$errorMessage = "Only an integer between 4 and 8 is allowed.";
+		$errorMessage = "Password reset. Only an integer between 4 and 8 is allowed.";
 		$qtyWords = 4;
 
 	}
