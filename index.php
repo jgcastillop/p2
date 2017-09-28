@@ -23,7 +23,8 @@
             }
 
             password {
-              max-width: 100%;
+              font-size: 5vw;
+              width: 50vw;
             }
 
             img {
