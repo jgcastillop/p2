@@ -22,6 +22,10 @@
             	color:red;
             }
 
+            password {
+              max-width: 100%;
+            }
+
             img {
               max-width: 100%;
               height: auto;

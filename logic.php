@@ -2,7 +2,9 @@
 
 #variables
 
-$wordList = array("correct", "horse", "battery", "staple", "fang", "breakable", "propellant", "academy", "horsepower", "animal", "search", "console", "pavement", "ideal", "relearn", "challenge", "aversion", "fuzzy", "awakening", "fermentation", "beverage", "bottomless", "knowing", "silver", "decent", "machine", "auction", "brand", "bite", "brick", "electric", "water", "deer", "already");
+$wordList = array("correct", "horse", "battery", "staple", "fang", "breakable", "propellant", "academy", "power", "animal", "search", "console",
+"pavement", "ideal", "relearn", "challenge", "aversion", "fuzzy", "awakening", "fermentation", "beverage", "bottomless", "knowing", "silver",
+"decent", "machine", "auction", "brand", "bite", "brick", "electric", "water", "deer", "already");
 $wordCount = count($wordList);
 $numberList = "0123456789";
 $symbolList = "!@#$%^&*()<>";
@@ -37,7 +39,7 @@ if(isset($_GET['quantity_of_words']) && !empty($_GET['quantity_of_words']))
 	if(!is_numeric($qtyWords))
 	{
 
-		$errorMessage = "Password reset. Only an integer between 4 and 8 is allowed.";
+		$errorMessage = "Password reset. Only numbers are allowed.";
 		$qtyWords = 4;
 
 	}
