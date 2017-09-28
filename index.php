@@ -22,15 +22,6 @@
             	color:red;
             }
 
-            .password {
-              font-size: 3vh;
-              text-align: center;
-              line-height: 1;
-              padding: 0;
-              margin: 0;
-
-            }
-
             img {
               max-width: 100%;
               height: auto;
