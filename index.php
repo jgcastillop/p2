@@ -21,6 +21,11 @@
             .error {
             	color:red;
             }
+
+            img {
+              width: 100%;
+              height: auto;
+            }
             </style>
 
 						<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel = "stylesheet">
