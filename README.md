@@ -2,7 +2,8 @@
 
 ### p2.castillopalacios.xyz
 
-This is the second project for the Dynamic Web Applications 2017 course.
+This is the second project for the Dynamic Web Applications 2017 course. Currently testing new features and testing new CSS. 
+
 Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
 * https://twitter.com/davidmillerskt

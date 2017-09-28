@@ -7,11 +7,11 @@
 
 						<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-						<link href='//netdna.bootstrapcdn.com/bootswatch/3.11/flatly/bootstrap.min.css' rel = "stylesheet">
+						<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel = "stylesheet">
 
-						<link href='css/styles.css' rel='stylesheet'>
+						<link href='css\styles.css' rel = "stylesheet">
 
-						<link href='css/main.css' rel='stylesheet'>
+						<link href='css\main.css' rel = "stylesheet">
 
 						<?php require "logic.php"; ?>
 
