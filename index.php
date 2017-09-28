@@ -12,7 +12,7 @@
             }
 
             .container {
-            	width:50%;
+            	width:100%;
             	min-width:200px;
             	margin-bottom:50px;
             	text-align:center;
@@ -40,7 +40,7 @@
 			<div class="container">
 	<h1>xkcd Password Generator</h1>
 	<br>
-	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic" height="250" width="350">
+	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic">
 	<h3><p class='password'><b>Your password:</b><br><i> <?php echo $password ?></i></p></h3>
 		<div class='error'><i><?php echo $errorMessage ?></i></div>
 		<br>
@@ -48,7 +48,7 @@
 		<div class='form-group'>
 			<label>
 			Quantity of words to use (between 4 and 8):
-					<input id=numb maxlength=1 type="text" name="quantity_of_words" value='<?php echo $qtyWords ?>'>
+					<input maxlength=1 type="text" name="quantity_of_words" value='<?php echo $qtyWords ?>'>
 				</label>
 			</div>
 			<div class='form-group'>
@@ -68,23 +68,7 @@
 				</label>
 				<br>
 			</div>
-			<button type='submit' class='btn btn-default' onclick="myFunction()">Generate new password</button>
-      <script>
-      function myFunction() {
-        var x, text;
-
-        // Get the value of the input field with id="numb"
-        x = document.getElementById("numb").value;
-
-        // If x is Not a Number or less than one or greater than 10
-        if (isNaN(x) || x < 4 || x > 8) {
-        text = "Input not valid";
-        } else {
-        text = "Input OK";
-        }
-        document.getElementById("demo").innerHTML = text;
-        }
-        </script>
+			<button type='submit' class='btn btn-default' >Generate new password</button>
 
 		</form>
 </div>
