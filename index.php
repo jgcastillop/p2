@@ -24,6 +24,10 @@
 
             .password {
               font-size: 3vh;
+              text-align: center;
+              line-height: 1;
+              padding: 0;
+              margin: 0;
 
             }
 
