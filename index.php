@@ -22,9 +22,9 @@
             	color:red;
             }
 
-            password {
-              font-size: 5vw;
-              width: 50vw;
+            .password {
+              font-size: 3vh;
+
             }
 
             img {
