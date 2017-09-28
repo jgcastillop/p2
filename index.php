@@ -23,7 +23,7 @@
             }
 
             .img {
-              max-width: 50%;
+              max-width: 100%;
               height: auto;
             }
             </style>
@@ -40,7 +40,7 @@
 			<div class="container">
 	<h1>xkcd Password Generator</h1>
 	<br>
-	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic" height="450" width="550">
+	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic" height="250" width="350">
 	<h3><p class='password'><b>Your password:</b><br><i> <?php echo $password ?></i></p></h3>
 		<div class='error'><i><?php echo $errorMessage ?></i></div>
 		<br>
