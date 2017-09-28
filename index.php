@@ -13,7 +13,7 @@
 
             .container {
             	width:50%;
-            	min-width:600px;
+            	min-width:300px;
             	margin-bottom:50px;
             	text-align:center;
             }
