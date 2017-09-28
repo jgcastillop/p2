@@ -5,13 +5,25 @@
 						<title>xkcd Password Generator</title>
 						<meta charset='utf-8'>
 
-						<meta name='viewport' content='width=device-width, initial-scale=1'>
+						<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <style>
+            body {
+                background-color:FFF;
+            }
+
+            .container {
+            	width:50%;
+            	min-width:600px;
+            	margin-bottom:50px;
+            	text-align:center;
+            }
+
+            .error {
+            	color:red;
+            }
+            </style>
 
 						<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel = "stylesheet">
-
-						<link href='css\styles.css' rel = "stylesheet">
-
-						<link href='css\main.css' rel = "stylesheet">
 
 						<?php require "logic.php"; ?>
 

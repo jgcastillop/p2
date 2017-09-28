@@ -44,7 +44,7 @@ if(isset($_GET['quantity_of_words']) && !empty($_GET['quantity_of_words']))
 	elseif ($qtyWords > 8 || $qtyWords < 4)
 	{
 
-		$errorMessage = "Only and integer between 4 and 8 is allowed.";
+		$errorMessage = "Only an integer between 4 and 8 is allowed.";
 		$qtyWords = 4;
 
 	}
