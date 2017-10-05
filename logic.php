@@ -90,4 +90,9 @@ if(isset($_GET["upper_case"]))
 		$password = strtoupper($password);
 }
 
+if(isset($_GET["lower_case"]))
+{
+		$password = strtolower($password);
+}
+
 ?>

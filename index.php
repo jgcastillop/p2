@@ -47,9 +47,12 @@
 		<br>
 	<form action="index.php" method="GET">
 		<div class='form-group'>
+			<div class='error'>*<i>Required fields</i></div>
 			<label>
-			Quantity of words to use (between 4 and 8):
+			Quantity of words to use (between 4 and 8)*:
 					<input maxlength=1 type="text" name="quantity_of_words" value='<?php echo $qtyWords ?>'>
+					<br>
+
 				</label>
 			</div>
 			<div class='form-group'>
@@ -64,11 +67,14 @@
 				</label>
 				<br>
 				<label>
-					<input type="checkbox" name="upper_case" value="1" <?php if(isset($_GET['upper_case'])) { echo 'checked'; } ?>>
 					Use uppercase?
+					<input type="radio" name="upper_case" value="yes"<?php if(isset($_GET['upper_case']))  ?>>Yes
+  				<input type="radio" name="lower_case" value="no" <?php if(isset($_GET['lower_case']))  ?>>No<br>
 				</label>
+
 				<br>
 			</div>
+
 			<button type='submit' class='btn btn-default' >Generate new password</button>
 
 		</form>
