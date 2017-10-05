@@ -42,7 +42,7 @@
 	<h1>xkcd Password Generator</h1>
 	<br>
 	<img src="http://imgs.xkcd.com/comics/password_strength.png" alt="comic">
-	<h3><p class='password'><b>Your password:</b><br><i> <?php echo $password ?></i></p></h3>
+	<h3><class='password'><b>Your password:</b><br><i> <?php echo $password ?></i></p></h3>
 		<div class='error'><i><?php echo $errorMessage ?></i></div>
 		<br>
 	<form action="index.php" method="GET">
@@ -69,7 +69,7 @@
 				<label>
 					Use uppercase?
 					<input type="radio" name="upper_case" value="yes"<?php if(isset($_GET['upper_case']))  ?>>Yes
-  				<input type="radio" name="lower_case" value="no" <?php if(isset($_GET['lower_case']))  ?>>No<br>
+  				<input type="radio" name="lower_case" value="yes" <?php if(isset($_GET['lower_case']))  ?>>No<br>
 				</label>
 
 				<br>
